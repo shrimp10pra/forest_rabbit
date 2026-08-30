@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#10160c">
-<title>もりのコックさん</title>
+<title>もりのパティシエ</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="wrap">
   <header class="masthead">
-    <span class="tag">もりのコックさん</span>
+    <span class="tag">もりのパティシエ</span>
     <h1>解答入力ページ</h1>
   </header>
 
@@ -185,7 +185,7 @@
           }
         }, 350);
       } else {
-        feedback.textContent = "ちがうかも…もう一度たしかめてみて";
+        feedback.textContent = "不正解です";
         feedback.className = "feedback wrong";
         card.classList.remove("shake");
         void card.offsetWidth; // reflowでアニメーションを再トリガー
@@ -201,8 +201,8 @@
     div.className = "finale";
     div.innerHTML = `
       <span class="tag">🌲 おしまい 🌲</span>
-      <h2>すべてのなぞを解き明かしました</h2>
       <p>あなたは2026年誕生日謎「思案するシアン」を解き明かしました</p>
+      <p>クリアおめでとうございます</p>
     `;
     return div;
   }
